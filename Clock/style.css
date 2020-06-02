@@ -1,0 +1,152 @@
+/* Layout */
+.main {
+    display: flex;
+    padding: 2em;
+    height: 90vh;
+    justify-content: center;
+    align-items: middle;
+}
+
+.clockbox,
+#clock {
+    width: 100%;
+}
+
+/* Clock styles */
+.circle {
+    fill: none;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.mid-circle {
+    fill: #000;
+}
+
+.hour-marks {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+}
+
+.hour-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 7;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+}
+
+/* Transparent box ensuring arms center properly. */
+.sizing-box {
+    fill: none;
+}
+
+/* Make all arms rotate around the same center point. */
+/* Optional: Use transition for animation. */
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+    /*transition: transform .5s ease-in-out;*/
+}
+
+.red{
+    background-color: red;
+    padding: 40px;
+    width: 5px;
+    height: 5px;
+    margin: 10px;
+    position: relative;
+    top: 200px;
+    z-index: 1;
+}
+
+.yellow{
+    background-color: yellow;
+    padding: 40px;
+    width: 5px;
+    height: 5px;
+    margin: 10px;
+    position: relative;
+    top: 200px;
+    z-index: 1;
+}
+
+.blue{
+    background-color: blue;
+    padding: 40px;
+    width: 5px;
+    height: 5px;
+    margin: 10px;
+    position: relative;
+    top: 200px;
+    z-index: 1;
+}
+
+.black{
+    background-color: black;
+    padding: 40px;
+    width: 5px;
+    height: 5px;
+    margin: 10px;
+    position: relative;
+    top: 200px;
+    z-index: 1;
+}
+
+.white{
+    background-color: white;
+    padding: 30px;
+    width: 5px;
+    top: 300px;
+    left: 105px;
+    margin: 10px;
+    position: fixed;
+    z-index: 2;
+}
+
+.timeTravel{
+    position: relative;
+    top: 500px;
+    left: -230px;
+    z-index: 1;
+}
+
+.x0x{
+    padding: 15px;
+    margin: 2px;
+    border: 0px;
+}
+
+.x5x{
+    padding: 15px;
+    margin: 2px;
+    border: 0px;
+}
+
+.x25x{
+    padding: 15px;
+    margin: 2px;
+    border: 0px;
+}
+
+.x100x{
+    padding: 15px;
+    margin: 2px;
+    border: 0px;
+}
